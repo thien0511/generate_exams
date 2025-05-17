@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.9-slim-buster
+FROM python:3.11-slim-buster
 
 # Set the working directory in the container
 WORKDIR /app
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Command to run the Streamlit application
-CMD ["streamlit", "run", "--server.port=8080", "--server.address=0.0.0.0", "examp_app.py"]
+CMD ["streamlit", "run", "--server.port=8080", "--server.address=0.0.0.0", "exam_app.py"]
